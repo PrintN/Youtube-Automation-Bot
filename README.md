@@ -2,6 +2,10 @@
 
 This Python-based bot automates the creation and upload of YouTube videos by sourcing content from Pixabay and Freesound. It uses GitHub Actions to run daily, creating and uploading fresh videos automatically without manual input. Checkout the automated [Youtube channel](https://www.youtube.com/@ReIaxingSleepMusic).
 
+![GitHub License](https://img.shields.io/github/license/PrintN/Youtube-Automation-Bot)
+![GitHub Issues](https://img.shields.io/github/issues-raw/PrintN/Youtube-Automation-Bot)
+![GitHub Fork](https://img.shields.io/github/forks/PrintN/Youtube-Automation-Bot)
+
 ## Features
 
 - **Automated Video Search & Download**: Fetches relevant video clips from Pixabay based on user-defined search queries.
