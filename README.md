@@ -1,6 +1,6 @@
 # YouTube Automation Bot
 
-This Python-based bot automates the creation and upload of YouTube videos by sourcing content from Pixabay and Freesound. It uses GitHub Actions to run daily, creating and uploading fresh videos automatically without manual input. Checkout the automated [Youtube channel](https://www.youtube.com/@ReIaxingSleepMusic).
+This Python-based bot automates the creation and upload of YouTube videos by sourcing content from Pixabay and Freesound. It uses GitHub Actions to run daily, creating and uploading fresh videos automatically without manual input. Check out the automated [Youtube channel](https://www.youtube.com/@ReIaxingSleepMusic).
 
 ![GitHub License](https://img.shields.io/github/license/PrintN/Youtube-Automation-Bot)
 ![GitHub Issues](https://img.shields.io/github/issues-raw/PrintN/Youtube-Automation-Bot)
@@ -17,41 +17,45 @@ This Python-based bot automates the creation and upload of YouTube videos by sou
 ## Prerequisites
 
 - [Python 3.9+](https://www.python.org/downloads/)
-- [Pixabay](https://pixabay.com/api/docs/) and [Freesound](https://freesound.org/home/login/?next=/apiv2/apply) API keys
-- YouTube Data API access ([How to set up Youtube API on Google Cloud](https://www.youtube.com/watch?v=aFwZgth790Q))
+- API keys for [Pixabay](https://pixabay.com/api/docs/) and [Freesound](https://freesound.org/home/login/?next=/apiv2/apply)
+- YouTube Data API access ([YouTube API Setup Guide](https://www.youtube.com/watch?v=aFwZgth790Q))
 
-## Setup (Manual Use)
 
-Clone the repository:
+## Setup
+
+<details>
+  <summary>Setup (Manual Use)</summary>
+
+Clone the repository to your machine:
 ```bash
 git clone https://github.com/PrintN/Youtube-Automation-Bot
 cd Youtube-Automation-Bot
 ```
 
+Run the setup.
 ```bash
 python3 setup.py
 ```
-It will 
-```
-1. Download all the pip packages necessary 
-2. Ask you for your Pixabay and Freesound API keys.
-3. Ask you for your Google Client ID and Google Client Secret
-4. Open a new window and ask you to authorize your Youtube channel.
-5. Reset auto.json and used_content.json
-```
+This will: 
+1. Install required packages
+2. Ask for Pixabay, Freesound, Google Client ID, and Secret
+3. Open a window for YouTube channel authorization
+4. Reset auto.json and used_content.json
 
 ### Usage
-Manual Mode:
 Run main.py manually to generate videos interactively:
 
 ```bash
 python main.py
 ```
+</details>
 
-## Setup Github Actions (Automated)
-Start by [forking](https://github.com/PrintN/Youtube-Automation-Bot) this repo.
+<details>
+  <summary>Setup (Automated with Github Actions)</summary>
+  
+#### Start by [forking](https://github.com/PrintN/Youtube-Automation-Bot/fork) this repo.
 
-Clone the repository:
+Clone the repository to your machine:
 ```bash
 git clone https://github.com/YOUR-FORKED-REPO
 cd Youtube-Automation-Bot
@@ -60,25 +64,36 @@ cd Youtube-Automation-Bot
 ```bash
 python3 setup.py
 ```
-It will 
-```
-1. Download all the pip packages necessary 
-2. Ask you for your Pixabay and Freesound API keys.
-3. Ask you for your Google Client ID and Google Client Secret
-4. Open a new window and ask you to authorize your Youtube channel.
-5. Reset auto.json and used_content.json
-```
-### Configuring API keys
-This bot can run daily using GitHub Actions. See the workflow.yaml file.
+This will: 
+1. Install required packages
+2. Ask for Pixabay, Freesound, Google Client ID, and Secret
+3. Open a window for YouTube channel authorization
+4. Reset auto.json and used_content.json
 
-Make sure you are inside the forked repo and go to Settings > Secrets and variables > Actions then click on the "New repository secret" button. You'll have to make 4 secrets:
-```bash
-FREESOUND_API_KEY
-PIXABAY_API_KEY
-CLIENT_SECRETS_JSON
-TOKEN_JSON
-```
-The Freesound and Pixabay API keys you just paste them in the value field. For the CLIENT_SECRETS_JSON and TOKEN_JSON you'll have to paste the base64 encoded version of them.
+### Configuring API Keys
+
+To enable the bot to run daily using GitHub Actions, you'll need to add the following secrets to your GitHub repository:
+
+1. Go to: ```Settings > Secrets and variables > Actions``` in your forked repo.
+2. Click "New repository secret" and add the following secrets:
+
+   - **FREESOUND_API_KEY**: Your Freesound API key.
+   - **PIXABAY_API_KEY**: Your Pixabay API key.
+   - **CLIENT_SECRETS_JSON**: Base64-encoded ```client_secrets.json``` file.
+   - **TOKEN_JSON**: Base64-encoded ```token.json``` file.
+
+#### How to Base64 Encode Files:
+- **Linux/macOS**:
+  ```bash
+  base64 client_secrets.json > encoded_client_secrets.txt
+  base64 token.json > encoded_token.txt
+  ```
+- **Windows (Powershell)**  
+  ```poweshell
+  [Convert]::ToBase64String([IO.File]::ReadAllBytes("client_secrets.json")) > encoded_client_secrets.txt
+  [Convert]::ToBase64String([IO.File]::ReadAllBytes("token.json")) > encoded_token.txt
+  ```
+Copy the contents of ```encoded_client_secrets.txt``` and ```encoded_token.txt``` into the value fields for **CLIENT_SECRETS_JSON** and **TOKEN_JSON**.
 
 ### Configuring auto.json
 This file contains video configurations for the bot to run in auto mode. You can create as many videos configuration as you want. Example structure:
@@ -100,15 +115,16 @@ This file contains video configurations for the bot to run in auto mode. You can
   ]
 }
 ```
-### Setting the time the bot will run
-To set the time go to .github > /workflows/ > daily-video.yaml. And change this:
+### Adjusting the Schedule
+To change the bot’s schedule, edit ```.github/workflows/daily-video.yaml```:
 ```yaml
 on:
   schedule:
     - cron: 0 5 * * * # 05:00 AM UTC
 ```
+</details>
 
-## Ideas
+## Ideas for Your Channel
 Here are some content ideas for an automated YouTube channel you could do by modifying the bot:
 - **Relaxing Sleep/Meditation Videos (Current)**
 - **Motivational Quotes**
