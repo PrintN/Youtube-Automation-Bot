@@ -1,0 +1,47 @@
+name: Daily Video
+
+on:
+  schedule:
+    - cron: 0 5 * * * # 5 AM UTC
+
+jobs:
+  create_video:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Set environment variables
+        run: |
+          echo "PIXABAY_API_KEY=${{ secrets.PIXABAY_API_KEY }}" >> $GITHUB_ENV
+          echo "FREESOUND_API_KEY=${{ secrets.FREESOUND_API_KEY }}" >> $GITHUB_ENV
+
+      - name: Decode client_secrets.json
+        run: echo "${{ secrets.CLIENT_SECRETS_JSON }}" | base64 --decode > client_secrets.json
+
+      - name: Decode token.json
+        run: echo "${{ secrets.TOKEN_JSON }}" | base64 --decode > token.json
+
+      - name: Run main.py
+        run: python main.py --auto
+
+      - name: Commit changes
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "action@github.com"
+          git add auto.json used_content.json
+          git commit -m "Auto update auto.json & used_content.json" || echo "No changes to commit"
+
+      - name: Push changes
+        run: git push origin main

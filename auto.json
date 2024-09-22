@@ -1,0 +1,16 @@
+{
+    "videos": [
+      {
+        "duration_minutes": 20,
+        "video_query": "meditation",
+        "audio_query": "calm music",
+        "upload_to_youtube": true
+      },
+      {
+        "duration_minutes": 60,
+        "video_query": "nature",
+        "audio_query": "soft rain",
+        "upload_to_youtube": true
+      }
+    ]
+  }
