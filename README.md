@@ -124,6 +124,9 @@ on:
 ```
 </details>
 
+## Limitations of the Youtube API
+By default, users are allowed to upload videos with a maximum duration of 15 minutes. If you wish to upload videos that exceed this limit, you will need to verify your account. For more details click [here](https://support.google.com/youtube/answer/71673).
+
 ## Ideas for Your Channel
 Here are some content ideas for an automated YouTube channel you could do by modifying the bot:
 - **Relaxing Sleep/Meditation Videos (Current)**
