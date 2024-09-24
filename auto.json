@@ -1,12 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 60,
-            "video_query": "AI generated cave rain",
-            "audio_query": "soft rain",
-            "upload_to_youtube": true
-        },
-        {
             "duration_minutes": 90,
             "video_query": "AI generated relaxing ocean waves",
             "audio_query": "ocean sounds",
