@@ -11,6 +11,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
+from google.auth.exceptions import RefreshError
 
 load_dotenv()
 
@@ -146,20 +147,61 @@ def generate_metadata(query, duration_minutes, attribution=None):
     print(f"Metadata generated: {metadata}")
     return metadata
 
-def upload_to_youtube(video_file, metadata):
+def refresh_token():
     creds = None
-    if os.path.exists('token.json'):
-        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
-    
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
+    token_path = 'token.json'
+    client_secrets_path = 'client_secrets.json'
+
+    if not os.path.exists(client_secrets_path):
+        print("Error: client_secrets.json file not found.")
+        return None
+
+    with open(client_secrets_path, 'r') as f:
+        client_secrets = json.load(f)
+
+    if os.path.exists(token_path):
+        with open(token_path, 'r') as token_file:
+            token_data = json.load(token_file)
+            refresh_token = token_data.get('refresh_token')
+            token_uri = token_data.get('token_uri')
+            client_id = token_data.get('client_id')
+            client_secret = token_data.get('client_secret')
+
+        if refresh_token:
+            creds = Credentials(
+                None, 
+                refresh_token=refresh_token,
+                token_uri=token_uri,
+                client_id=client_id,
+                client_secret=client_secret,
+                scopes=SCOPES
+            )
+
+    if creds and creds.refresh_token:
+        try:
             creds.refresh(Request())
-        else:
-            flow = InstalledAppFlow.from_client_secrets_file('client_secrets.json', SCOPES)
-            creds = flow.run_local_server(port=0)
-        
-        with open('token.json', 'w') as token:
-            token.write(creds.to_json())
+            with open(token_path, 'w') as token_file:
+                token_file.write(creds.to_json())
+            print("Token refreshed successfully.")
+        except RefreshError as e:
+            print(f"Error refreshing token. Token might be invalid. Reauthorizing...")
+            creds = None
+
+    if not creds or not creds.valid:
+        flow = InstalledAppFlow.from_client_secrets_file(client_secrets_path, SCOPES)
+        creds = flow.run_local_server(port=0)
+        with open(token_path, 'w') as token_file:
+            token_file.write(creds.to_json())
+        print("New token generated and saved.")
+    
+    return creds
+
+def upload_to_youtube(video_file, metadata):
+    creds = refresh_token()
+
+    if creds is None:
+        print("Failed to refresh credentials.")
+        return
 
     youtube = build('youtube', 'v3', credentials=creds)
 
@@ -168,7 +210,7 @@ def upload_to_youtube(video_file, metadata):
             'title': metadata['title'],
             'description': metadata['description'],
             'tags': metadata['tags'],
-            'categoryId': '10',
+            'categoryId': '10',  # Music category
         },
         'status': {
             'privacyStatus': 'public',
@@ -185,7 +227,6 @@ def upload_to_youtube(video_file, metadata):
 
     response = request.execute()
     print(f"Video uploaded successfully: https://www.youtube.com/watch?v={response['id']}")
-
 
 def main():
     used_content = load_used_content()
@@ -216,6 +257,7 @@ def main():
             combine_audio_video("video.mp4", "music.mp3", "final_video.mp4", duration_minutes=duration_minutes)
 
             if should_upload_to_youtube:
+                refresh_token()
                 upload_to_youtube("final_video.mp4", metadata)
 
             with open('auto.json', 'w') as f:
@@ -266,6 +308,7 @@ def main():
 
             upload_choice = input("Do you want to upload the video to YouTube? (yes/no): ").lower()
             if upload_choice == 'yes':
+                refresh_token()
                 upload_to_youtube("final_video.mp4", metadata)
 
             repeat = input("Do you want to create another video? (yes/no): ").lower()
