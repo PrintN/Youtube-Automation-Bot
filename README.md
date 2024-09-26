@@ -100,18 +100,20 @@ This file contains video configurations for the bot to run in auto mode. You can
 ```json
 {
   "videos": [
-    {
-      "duration_minutes": 60,
-      "video_query": "meditation",
-      "audio_query": "calm music",
-      "upload_to_youtube": true
-    },
-    {
-      "duration_minutes": 30,
-      "video_query": "nature",
-      "audio_query": "soft rain",
-      "upload_to_youtube": false
-    }
+      {
+          "duration_minutes": 30,
+          "video_query": "forest landscapes",
+          "audio_query": "forest ambiance",
+          "upload_to_youtube": false,
+          "video_type": "video"
+      },
+      {
+          "duration_minutes": 1,
+          "video_query": "mountain sunrise",
+          "audio_query": "gentle wind",
+          "upload_to_youtube": true,
+          "video_type": "short"
+      },
   ]
 }
 ```
