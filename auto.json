@@ -1,12 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 90,
-            "video_query": "AI generated relaxing ocean waves",
-            "audio_query": "ocean sounds",
-            "upload_to_youtube": true
-        },
-        {
             "duration_minutes": 30,
             "video_query": "AI generated forest landscapes",
             "audio_query": "forest ambiance",
