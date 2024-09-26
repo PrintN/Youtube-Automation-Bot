@@ -106,29 +106,32 @@ def download_file(url, filename):
         file.write(response.content)
     print(f"Downloaded: {filename}")
 
-
-def combine_audio_video(video_file, audio_file, output_file, duration_minutes=60):
+def combine_audio_video(video_file, audio_file, output_file, duration_minutes=60, is_short=False):
     video = VideoFileClip(video_file)
     audio = AudioFileClip(audio_file)
-
     duration_seconds = duration_minutes * 60
+
+    if is_short:
+        print("Formatting to short")
+        video = video.resize((1080,1920))
 
     video_loop = concatenate_videoclips([video] * (duration_seconds // int(video.duration) + 1)).subclip(0, duration_seconds)
     audio_looped = audio_loop(audio, duration=duration_seconds)
 
     final_video = video_loop.set_audio(audio_looped)
-
+    
     final_video.write_videofile(output_file, codec='libx264', audio_codec='aac')
 
     video.close()
     audio.close()
     final_video.close()
 
-
-def generate_metadata(query, duration_minutes, attribution=None):
+def generate_metadata(query, duration_minutes, attribution=None, is_short=False):
     clean_query = query.replace("AI generated", "").strip()
-    
-    title = f"Relaxing {clean_query.capitalize()} Music ({duration_minutes} minutes)"
+    if is_short:
+        title = f"Relaxing {clean_query.capitalize()} Music #shorts"
+    else:
+        title = f"Relaxing {clean_query.capitalize()} Music ({duration_minutes} minutes)"
     description = (
         f"Welcome to this {duration_minutes}-minute {clean_query} video, created to help you find calm and relaxation. "
         "Enjoy soothing music combined with peaceful visuals, perfect for meditation, relaxation, and sleep.\n\n"
@@ -141,7 +144,7 @@ def generate_metadata(query, duration_minutes, attribution=None):
     description += (
         "\n-------------------------------------------------------------------------------------\n"
         "📽️ This video was created by the YouTube Automation Bot."
-        "Check out the project here 👉 https://github.com/PrintN/Youtube-Automation-Bot.\n"
+        " Check out the project here 👉 https://github.com/PrintN/Youtube-Automation-Bot.\n"
     )
     
     tags = [clean_query, "relaxation", "calm", "soothing music", "meditation", "sleep", "stress relief", "mindfulness"]
@@ -208,7 +211,7 @@ def refresh_token():
     
     return creds
 
-def upload_to_youtube(video_file, metadata):
+def upload_to_youtube(video_file, metadata, is_short=False):
     creds = refresh_token()
 
     if creds is None:
@@ -238,7 +241,10 @@ def upload_to_youtube(video_file, metadata):
     )
 
     response = request.execute()
-    print(f"Video uploaded successfully: https://www.youtube.com/watch?v={response['id']}")
+    if is_short:
+        print(f"Video uploaded successfully: https://www.youtube.com/shorts/{response['id']}")
+    else:
+        print(f"Video uploaded successfully: https://www.youtube.com/watch?v={response['id']}")
 
 def main():
     used_content = load_used_content()
@@ -249,10 +255,16 @@ def main():
 
         if config['videos']:
             video_config = config['videos'].pop(0)
-            duration_minutes = video_config['duration_minutes']
             video_query = video_config['video_query']
             audio_query = video_config['audio_query']
             should_upload_to_youtube = video_config['upload_to_youtube']
+            video_type = video_config['video_type']
+
+            is_short = video_type == 'short'
+            if is_short:
+                duration_minutes = 1
+            else:
+                duration_minutes = video_config['duration_minutes']
 
             video_url = search_and_download_meditation_video(used_content['videos'], video_query)
             if video_url:
@@ -264,13 +276,13 @@ def main():
 
             save_used_content(used_content)
 
-            metadata = generate_metadata(video_query, duration_minutes, attribution=attribution_text)
+            metadata = generate_metadata(video_query, duration_minutes, attribution=attribution_text, is_short=is_short)
 
-            combine_audio_video("video.mp4", "music.mp3", "final_video.mp4", duration_minutes=duration_minutes)
+            combine_audio_video("video.mp4", "music.mp3", "final_video.mp4", duration_minutes=duration_minutes, is_short=is_short)
 
             if should_upload_to_youtube:
                 refresh_token()
-                upload_to_youtube("final_video.mp4", metadata)
+                upload_to_youtube("final_video.mp4", metadata, is_short=is_short)
 
             with open('auto.json', 'w') as f:
                 json.dump(config, f, indent=4)
@@ -279,7 +291,9 @@ def main():
 
     else:
         while True:
-            duration_minutes = int(input("Enter the duration for the video (in minutes): "))
+            video_type = input("Do you want to create a Short or a regular video? (Enter 'short' or 'video'): ")
+            is_short = video_type == 'short'
+            duration_minutes = 1 if is_short else int(input("Enter the duration for the video (in minutes): "))
             video_query = input("Enter the search query for the Pixabay video: ")
             audio_query = input("Enter the search query for the Freesound music: ")
 
@@ -314,14 +328,14 @@ def main():
 
             save_used_content(used_content)
 
-            metadata = generate_metadata(video_query, duration_minutes, attribution=attribution_text)
+            metadata = generate_metadata(video_query, duration_minutes, attribution=attribution_text, is_short=is_short)
 
-            combine_audio_video("video.mp4", "music.mp3", "final_video.mp4", duration_minutes=duration_minutes)
+            combine_audio_video("video.mp4", "music.mp3", "final_video.mp4", duration_minutes=duration_minutes, is_short=is_short)
 
             upload_choice = input("Do you want to upload the video to YouTube? (yes/no): ").lower()
             if upload_choice == 'yes':
                 refresh_token()
-                upload_to_youtube("final_video.mp4", metadata)
+                upload_to_youtube("final_video.mp4", metadata, is_short=is_short)
 
             repeat = input("Do you want to create another video? (yes/no): ").lower()
             if repeat != 'yes':
