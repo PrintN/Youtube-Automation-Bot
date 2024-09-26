@@ -126,13 +126,25 @@ def combine_audio_video(video_file, audio_file, output_file, duration_minutes=60
 
 
 def generate_metadata(query, duration_minutes, attribution=None):
-    title = f"Relaxing {query.capitalize()} Music ({duration_minutes} minutes)"
-    description = f"This is a {duration_minutes}-minute {query} video with soothing music to help you relax and meditate."
+    clean_query = query.replace("AI generated", "").strip()
+    
+    title = f"Relaxing {clean_query.capitalize()} Music ({duration_minutes} minutes)"
+    description = (
+        f"Welcome to this {duration_minutes}-minute {clean_query} video, created to help you find calm and relaxation. "
+        "Enjoy soothing music combined with peaceful visuals, perfect for meditation, relaxation, and sleep.\n\n"
+        "Whether you're unwinding after a long day or looking to enhance your meditation practice, this video is here to provide peace and serenity."
+    )
     
     if attribution:
-        description += f"\n\n🎶Music attribution🎶\n{attribution}"
-
-    tags = [query, "relaxation", "calm", "soothing music", "meditation"]
+        description += f"\n\n🎶 Music Attribution 🎶\n{attribution}"
+    
+    description += (
+        "\n-------------------------------------------------------------------------------------\n"
+        "📽️ This video was created by the YouTube Automation Bot."
+        "Check out the project here 👉 https://github.com/PrintN/Youtube-Automation-Bot.\n"
+    )
+    
+    tags = [clean_query, "relaxation", "calm", "soothing music", "meditation", "sleep", "stress relief", "mindfulness"]
 
     metadata = {
         'title': title,
