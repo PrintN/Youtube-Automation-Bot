@@ -4,319 +4,281 @@
             "duration_minutes": 30,
             "video_query": "AI generated forest landscapes",
             "audio_query": "forest ambiance",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 45,
+            "duration_minutes": 1,
             "video_query": "AI generated mountain sunrise",
             "audio_query": "gentle wind",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 120,
             "video_query": "AI generated space journey",
             "audio_query": "ambient space music",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 25,
+            "duration_minutes": 1,
             "video_query": "AI generated underwater scenes",
             "audio_query": "calm underwater sounds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 50,
             "video_query": "AI generated beach vibes",
             "audio_query": "soft waves and wind",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 70,
+            "duration_minutes": 1,
             "video_query": "AI generated calm forest streams",
             "audio_query": "stream sounds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 60,
             "video_query": "AI generated autumn leaves falling",
             "audio_query": "rustling leaves",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 80,
+            "duration_minutes": 1,
             "video_query": "AI generated galaxy journey",
             "audio_query": "space ambient",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 90,
             "video_query": "AI generated magical forest",
             "audio_query": "nature and birds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 30,
+            "duration_minutes": 1,
             "video_query": "AI generated snowy mountain landscapes",
             "audio_query": "wind and snow sounds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 60,
             "video_query": "AI generated lake view",
             "audio_query": "water and birds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 20,
+            "duration_minutes": 1,
             "video_query": "AI generated serene desert",
             "audio_query": "soft wind",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 40,
             "video_query": "AI generated cherry blossom scenery",
             "audio_query": "birds and wind chimes",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 90,
+            "duration_minutes": 1,
             "video_query": "AI generated galaxy exploration",
             "audio_query": "mystical ambient music",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 55,
             "video_query": "AI generated tropical rainforest",
             "audio_query": "jungle sounds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 100,
+            "duration_minutes": 1,
             "video_query": "AI generated peaceful waterfall",
             "audio_query": "waterfall sounds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 75,
             "video_query": "AI generated sunrise over the ocean",
             "audio_query": "ocean waves and birds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 90,
+            "duration_minutes": 1,
             "video_query": "AI generated space relaxation",
             "audio_query": "deep space ambiance",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 35,
             "video_query": "AI generated calm village in mountains",
             "audio_query": "soft wind and nature",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 50,
+            "duration_minutes": 1,
             "video_query": "AI generated serene river",
             "audio_query": "gentle river sounds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 70,
             "video_query": "AI generated peaceful park scene",
             "audio_query": "birds and distant voices",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 30,
+            "duration_minutes": 1,
             "video_query": "AI generated mountain stream",
             "audio_query": "flowing water and birds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 40,
             "video_query": "AI generated evening by the lake",
             "audio_query": "soft water and night ambiance",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 25,
+            "duration_minutes": 1,
             "video_query": "AI generated sunset over the plains",
             "audio_query": "soft breeze",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 50,
             "video_query": "AI generated peaceful meadow",
             "audio_query": "birds and wind",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 90,
+            "duration_minutes": 1,
             "video_query": "AI generated deep forest trail",
             "audio_query": "forest ambiance",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 45,
             "video_query": "AI generated moonlight over ocean",
             "audio_query": "soft waves",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 80,
+            "duration_minutes": 1,
             "video_query": "AI generated river in autumn",
             "audio_query": "river and wind",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 70,
             "video_query": "AI generated snowy forest",
             "audio_query": "winter wind",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 65,
+            "duration_minutes": 1,
             "video_query": "AI generated calm jungle evening",
             "audio_query": "jungle sounds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 100,
             "video_query": "AI generated space journey ambient",
             "audio_query": "space music",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 55,
+            "duration_minutes": 1,
             "video_query": "AI generated mountain sunset",
             "audio_query": "calm wind and nature",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 60,
             "video_query": "AI generated quiet forest glade",
             "audio_query": "forest sounds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 50,
+            "duration_minutes": 1,
             "video_query": "AI generated winter night sky",
             "audio_query": "soft winter breeze",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 35,
             "video_query": "AI generated coastal cliffs",
             "audio_query": "waves and wind",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 45,
+            "duration_minutes": 1,
             "video_query": "AI generated beautiful sunset",
             "audio_query": "gentle evening sounds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 30,
             "video_query": "AI generated calm village sunset",
             "audio_query": "soft village ambiance",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 70,
+            "duration_minutes": 1,
             "video_query": "AI generated serene riverbank",
             "audio_query": "flowing water and wind",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         },
         {
             "duration_minutes": 40,
             "video_query": "AI generated tropical island evening",
             "audio_query": "tropical sounds",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "video"
         },
         {
-            "duration_minutes": 25,
+            "duration_minutes": 1,
             "video_query": "AI generated desert oasis",
             "audio_query": "soft wind and water",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 60,
-            "video_query": "AI generated galaxy dreamscape",
-            "audio_query": "space and ambient music",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 85,
-            "video_query": "AI generated calming moonlight night",
-            "audio_query": "night ambiance",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 45,
-            "video_query": "AI generated serene morning sky",
-            "audio_query": "birdsong and breeze",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 30,
-            "video_query": "AI generated peaceful canyon",
-            "audio_query": "calm wind",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 90,
-            "video_query": "AI generated starry night sky",
-            "audio_query": "gentle ambient music",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 40,
-            "video_query": "AI generated quiet city park",
-            "audio_query": "birds and distant city sounds",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 65,
-            "video_query": "AI generated peaceful jungle waterfall",
-            "audio_query": "waterfall and jungle ambiance",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 55,
-            "video_query": "AI generated relaxing summer breeze",
-            "audio_query": "soft wind and birds",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 70,
-            "video_query": "AI generated sunrise over the forest",
-            "audio_query": "birds and wind",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 85,
-            "video_query": "AI generated serene evening in the forest",
-            "audio_query": "forest ambiance",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 50,
-            "video_query": "AI generated peaceful lake during sunset",
-            "audio_query": "water and distant birds",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 75,
-            "video_query": "AI generated misty morning forest",
-            "audio_query": "misty forest sounds",
-            "upload_to_youtube": true
-        },
-        {
-            "duration_minutes": 90,
-            "video_query": "AI generated quiet winter landscape",
-            "audio_query": "soft wind in winter",
-            "upload_to_youtube": true
+            "upload_to_youtube": true,
+            "video_type": "short"
         }
     ]
 }
