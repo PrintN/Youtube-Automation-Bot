@@ -1,13 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 30,
-            "video_query": "AI generated forest landscapes",
-            "audio_query": "forest ambiance",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
             "duration_minutes": 1,
             "video_query": "AI generated mountain sunrise",
             "audio_query": "gentle wind",
