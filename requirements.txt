@@ -1,5 +1,6 @@
 requests==2.31.0
 moviepy==1.0.3
+pillow==9.2.0
 python-dotenv==1.0.0
 google-auth==2.23.4
 google-auth-oauthlib==1.0.0
