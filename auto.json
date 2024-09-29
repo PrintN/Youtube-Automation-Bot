@@ -1,14 +1,7 @@
 {
     "videos": [
         {
-            "duration_minutes": 1,
-            "video_query": "AI generated mountain sunrise",
-            "audio_query": "gentle wind",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 120,
+            "duration_minutes": 90,
             "video_query": "AI generated space journey",
             "audio_query": "ambient space music",
             "upload_to_youtube": true,

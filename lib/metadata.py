@@ -32,3 +32,5 @@ def generate_metadata(query, duration_minutes, attribution=None, is_short=False)
 
     with open('metadata.json', 'w') as json_file:
         json.dump(metadata, json_file, indent=4)
+
+    return metadata
