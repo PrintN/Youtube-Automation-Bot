@@ -22,12 +22,16 @@ def generate_metadata(query, duration_minutes, attribution=None, is_short=False)
     )
     
     tags = [clean_query, "relaxation", "calm", "soothing music", "meditation", "sleep", "stress relief", "mindfulness"]
+    
+    minutes, seconds = str(duration_minutes).split('.')
+    minutes = str(minutes)
+    seconds = str(seconds)
 
     metadata = {
         'title': title,
         'description': description,
         'tags': tags,
-        'duration': duration_minutes * 60
+        'duration': minutes + "." + seconds
     }
 
     with open('metadata.json', 'w') as json_file:

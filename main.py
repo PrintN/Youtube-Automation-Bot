@@ -20,12 +20,9 @@ def main():
             audio_query = video_config['audio_query']
             should_upload_to_youtube = video_config['upload_to_youtube']
             video_type = video_config['video_type']
+            duration_minutes = video_config['duration_minutes']
 
             is_short = video_type == 'short'
-            if is_short:
-                duration_minutes = 1
-            else:
-                duration_minutes = video_config['duration_minutes']
 
             video_url = search_and_download_meditation_video(used_content['videos'], video_query)
             if video_url:
@@ -53,11 +50,11 @@ def main():
     else:
         while True:
             video_type = input("Do you want to create a Short or a regular video? (Enter 'short' or 'video'): ")
-            is_short = video_type == 'short'
-            duration_minutes = 1 if is_short else int(input("Enter the duration for the video (in minutes): "))
+            duration_minutes = float(input("Enter the duration for the video (in minutes): "))
             video_query = input("Enter the search query for the Pixabay video: ")
             audio_query = input("Enter the search query for the Freesound music: ")
-
+            is_short = video_type == 'short'
+            
             video_url = search_and_download_meditation_video(used_content['videos'], video_query)
             if video_url:
                 used_content['videos'].append(video_url)

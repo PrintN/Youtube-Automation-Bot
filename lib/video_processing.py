@@ -1,10 +1,18 @@
 from moviepy.editor import VideoFileClip, AudioFileClip, concatenate_videoclips
 from moviepy.audio.fx.all import audio_loop
 
-def combine_audio_video(video_file, audio_file, output_file, duration_minutes=60, is_short=False):
+def combine_audio_video(video_file, audio_file, output_file, duration_minutes=60.0, is_short=False):
     video = VideoFileClip(video_file)
     audio = AudioFileClip(audio_file)
-    duration_seconds = duration_minutes * 60
+        
+    minutes, seconds = str(duration_minutes).split('.')
+    minutes = int(minutes)
+    seconds = int(seconds)
+
+    if seconds >= 60:
+        raise ValueError("Invalid seconds value. Please enter a valid duration (e.g., 1.45 for 1 minute 45 seconds).")
+
+    duration_seconds = minutes * 60 + seconds
 
     if is_short:
         video = video.resize((1080, 1920))
