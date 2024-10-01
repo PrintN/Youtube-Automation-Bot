@@ -1,13 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 1,
-            "video_query": "AI generated underwater scenes",
-            "audio_query": "calm underwater sounds",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 50,
             "video_query": "AI generated beach vibes",
             "audio_query": "soft waves and wind",
