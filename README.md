@@ -108,7 +108,7 @@ This file contains video configurations for the bot to run in auto mode. You can
           "video_type": "video"
       },
       {
-          "duration_minutes": 1,
+          "duration_minutes": 0.55,
           "video_query": "mountain sunrise",
           "audio_query": "gentle wind",
           "upload_to_youtube": true,
@@ -128,6 +128,9 @@ on:
 
 ## Limitations of the Youtube API
 By default, users are allowed to upload videos with a maximum duration of 15 minutes. If you wish to upload videos that exceed this limit, you will need to verify your account. For more details click [here](https://support.google.com/youtube/answer/71673).
+
+## ⭐ Support the Project
+If you find this project helpful, please consider giving it a ⭐! Starring the repository helps others discover the project and motivates further development. Thank you for your support!
 
 ## Ideas for Your Channel
 Here are some content ideas for an automated YouTube channel you could do by modifying the bot:
