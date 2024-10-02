@@ -4,11 +4,15 @@ from moviepy.audio.fx.all import audio_loop
 def combine_audio_video(video_file, audio_file, output_file, duration_minutes=60.0, is_short=False):
     video = VideoFileClip(video_file)
     audio = AudioFileClip(audio_file)
-        
-    minutes, seconds = str(duration_minutes).split('.')
-    minutes = int(minutes)
-    seconds = int(seconds)
 
+    if '.' in str(duration_minutes):
+        minutes, seconds = str(duration_minutes).split('.')
+        minutes = int(minutes)
+        seconds = int(seconds)
+    else:
+        minutes = int(duration_minutes)
+        seconds = int(0)
+         
     if seconds >= 60:
         raise ValueError("Invalid seconds value. Please enter a valid duration (e.g., 1.45 for 1 minute 45 seconds).")
 

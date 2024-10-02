@@ -23,9 +23,13 @@ def generate_metadata(query, duration_minutes, attribution=None, is_short=False)
     
     tags = [clean_query, "relaxation", "calm", "soothing music", "meditation", "sleep", "stress relief", "mindfulness"]
     
-    minutes, seconds = str(duration_minutes).split('.')
-    minutes = str(minutes)
-    seconds = str(seconds)
+    if '.' in str(duration_minutes):
+        minutes, seconds = str(duration_minutes).split('.')
+        minutes = str(minutes)
+        seconds = str(seconds)
+    else:
+        minutes = str(duration_minutes)
+        seconds = str("0")
 
     metadata = {
         'title': title,
