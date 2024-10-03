@@ -14,7 +14,7 @@ def main():
         with open('auto.json', 'r') as f:
             config = json.load(f)
 
-        if config['videos']:
+        while config['videos']:
             video_config = config['videos'].pop(0)
             video_query = video_config['video_query']
             audio_query = video_config['audio_query']
@@ -25,17 +25,22 @@ def main():
             is_short = video_type == 'short'
 
             video_url = search_and_download_meditation_video(used_content['videos'], video_query)
-            if video_url:
-                used_content['videos'].append(video_url)
+            if not video_url:
+                print(f"Retrying with next config: Could not find a video for '{video_query}'")
+                continue 
+
+            used_content['videos'].append(video_url)
 
             audio_url, attribution_text = search_and_download_music(audio_query, used_content['audios'])
-            if audio_url:
-                used_content['audios'].append(audio_url)
+            if not audio_url:
+                print(f"Retrying with next config: Could not find audio for '{audio_query}'")
+                continue
+
+            used_content['audios'].append(audio_url)
 
             save_used_content(used_content)
 
             metadata = generate_metadata(video_query, duration_minutes, attribution=attribution_text, is_short=is_short)
-
             combine_audio_video("video.mp4", "music.mp3", "final_video.mp4", duration_minutes=duration_minutes, is_short=is_short)
 
             if should_upload_to_youtube:
@@ -44,6 +49,10 @@ def main():
 
             with open('auto.json', 'w') as f:
                 json.dump(config, f, indent=4)
+
+            print(f"Successfully processed video for query: '{video_query}'")
+            break
+
         else:
             print("All video configurations have been processed.")
 
