@@ -14,7 +14,9 @@ def main():
         with open('auto.json', 'r') as f:
             config = json.load(f)
 
-        while config['videos']:
+        video_created = False 
+
+        while config['videos'] and not video_created:
             video_config = config['videos'].pop(0)
             video_query = video_config['video_query']
             audio_query = video_config['audio_query']
@@ -27,14 +29,14 @@ def main():
             video_url = search_and_download_meditation_video(used_content['videos'], video_query)
             if not video_url:
                 print(f"Retrying with next config: Could not find a video for '{video_query}'")
-                continue 
+                continue  
 
             used_content['videos'].append(video_url)
 
             audio_url, attribution_text = search_and_download_music(audio_query, used_content['audios'])
             if not audio_url:
                 print(f"Retrying with next config: Could not find audio for '{audio_query}'")
-                continue
+                continue  
 
             used_content['audios'].append(audio_url)
 
@@ -50,11 +52,12 @@ def main():
             with open('auto.json', 'w') as f:
                 json.dump(config, f, indent=4)
 
-            print(f"Successfully processed video for query: '{video_query}'")
-            break
+            print(f"Successfully processed and uploaded video for query: '{video_query}'")
+            video_created = True
 
         else:
-            print("All video configurations have been processed.")
+            if not video_created:
+                print("All video configurations have been processed or none were successful.")
 
     else:
         while True:
