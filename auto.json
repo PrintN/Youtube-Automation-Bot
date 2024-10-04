@@ -1,13 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 50,
-            "video_query": "AI generated beach vibes",
-            "audio_query": "soft waves and wind",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
             "duration_minutes": 0.55,
             "video_query": "AI generated calm forest streams",
             "audio_query": "stream sounds",
