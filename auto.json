@@ -1,13 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 0.55,
-            "video_query": "AI generated calm forest streams",
-            "audio_query": "stream sounds",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 60,
             "video_query": "AI generated autumn leaves falling",
             "audio_query": "rustling leaves",
@@ -43,7 +36,7 @@
             "video_type": "video"
         },
         {
-            "duration_minutes": 0.50,
+            "duration_minutes": 0.5,
             "video_query": "AI generated serene desert",
             "audio_query": "soft wind",
             "upload_to_youtube": true,
@@ -85,7 +78,7 @@
             "video_type": "video"
         },
         {
-            "duration_minutes": 0.50,
+            "duration_minutes": 0.5,
             "video_query": "AI generated space relaxation",
             "audio_query": "deep space ambiance",
             "upload_to_youtube": true,
@@ -113,7 +106,7 @@
             "video_type": "video"
         },
         {
-            "duration_minutes": 0.50,
+            "duration_minutes": 0.5,
             "video_query": "AI generated mountain stream",
             "audio_query": "flowing water and birds",
             "upload_to_youtube": true,
@@ -225,7 +218,7 @@
             "video_type": "video"
         },
         {
-            "duration_minutes": 0.50,
+            "duration_minutes": 0.5,
             "video_query": "AI generated serene riverbank",
             "audio_query": "flowing water and wind",
             "upload_to_youtube": true,
