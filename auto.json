@@ -1,13 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 60,
-            "video_query": "AI generated autumn leaves falling",
-            "audio_query": "rustling leaves",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
             "duration_minutes": 0.58,
             "video_query": "AI generated galaxy journey",
             "audio_query": "space ambient",
