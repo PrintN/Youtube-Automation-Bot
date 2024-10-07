@@ -1,13 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 0.58,
-            "video_query": "AI generated galaxy journey",
-            "audio_query": "space ambient",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 90,
             "video_query": "AI generated magical forest",
             "audio_query": "nature and birds",
