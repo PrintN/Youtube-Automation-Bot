@@ -1,34 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 90,
-            "video_query": "AI generated magical forest",
-            "audio_query": "nature and birds",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.45,
-            "video_query": "AI generated snowy mountain landscapes",
-            "audio_query": "wind and snow sounds",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 60,
-            "video_query": "AI generated lake view",
-            "audio_query": "water and birds",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.5,
-            "video_query": "AI generated serene desert",
-            "audio_query": "soft wind",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 40,
             "video_query": "AI generated cherry blossom scenery",
             "audio_query": "birds and wind chimes",
