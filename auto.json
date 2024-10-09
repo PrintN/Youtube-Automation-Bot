@@ -1,20 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 40,
-            "video_query": "AI generated cherry blossom scenery",
-            "audio_query": "birds and wind chimes",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.58,
-            "video_query": "AI generated galaxy exploration",
-            "audio_query": "mystical ambient music",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 55,
             "video_query": "AI generated tropical rainforest",
             "audio_query": "jungle sounds",
