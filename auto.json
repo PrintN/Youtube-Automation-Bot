@@ -1,13 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 55,
-            "video_query": "AI generated tropical rainforest",
-            "audio_query": "jungle sounds",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
             "duration_minutes": 0.56,
             "video_query": "AI generated peaceful waterfall",
             "audio_query": "waterfall sounds",
