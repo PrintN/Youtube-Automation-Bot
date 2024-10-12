@@ -90,8 +90,8 @@ To enable the bot to run daily using GitHub Actions, you'll need to add the foll
   ```
 - **Windows (Powershell)**  
   ```poweshell
-  [Convert]::ToBase64String([IO.File]::ReadAllBytes("client_secrets.json")) > encoded_client_secrets.txt
-  [Convert]::ToBase64String([IO.File]::ReadAllBytes("token.json")) > encoded_token.txt
+  [Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\FULL\PATH\TO\client_secrets.json")) > encoded_client_secrets.txt
+  [Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\FULL\PATH\TO\token.json")) > encoded_token.txt
   ```
 Copy the contents of ```encoded_client_secrets.txt``` and ```encoded_token.txt``` into the value fields for **CLIENT_SECRETS_JSON** and **TOKEN_JSON**.
 
