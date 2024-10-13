@@ -1,20 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 75,
-            "video_query": "AI generated sunrise over the ocean",
-            "audio_query": "ocean waves and birds",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.5,
-            "video_query": "AI generated space relaxation",
-            "audio_query": "deep space ambiance",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 35,
             "video_query": "AI generated calm village in mountains",
             "audio_query": "soft wind and nature",
