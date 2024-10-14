@@ -1,20 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 35,
-            "video_query": "AI generated calm village in mountains",
-            "audio_query": "soft wind and nature",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.45,
-            "video_query": "AI generated serene river",
-            "audio_query": "gentle river sounds",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 70,
             "video_query": "AI generated peaceful park scene",
             "audio_query": "birds and distant voices",
