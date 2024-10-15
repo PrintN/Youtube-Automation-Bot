@@ -1,34 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 70,
-            "video_query": "AI generated peaceful park scene",
-            "audio_query": "birds and distant voices",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.5,
-            "video_query": "AI generated mountain stream",
-            "audio_query": "flowing water and birds",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 40,
-            "video_query": "AI generated evening by the lake",
-            "audio_query": "soft water and night ambiance",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.57,
-            "video_query": "AI generated sunset over the plains",
-            "audio_query": "soft breeze",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 50,
             "video_query": "AI generated peaceful meadow",
             "audio_query": "birds and wind",
