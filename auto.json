@@ -1,13 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 50,
-            "video_query": "AI generated peaceful meadow",
-            "audio_query": "birds and wind",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
             "duration_minutes": 0.58,
             "video_query": "AI generated deep forest trail",
             "audio_query": "forest ambiance",
