@@ -1,13 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 0.58,
-            "video_query": "AI generated deep forest trail",
-            "audio_query": "forest ambiance",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 45,
             "video_query": "AI generated moonlight over ocean",
             "audio_query": "soft waves",
