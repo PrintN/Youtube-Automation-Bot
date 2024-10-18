@@ -1,13 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 45,
-            "video_query": "AI generated moonlight over ocean",
-            "audio_query": "soft waves",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
             "duration_minutes": 0.55,
             "video_query": "AI generated river in autumn",
             "audio_query": "river and wind",
