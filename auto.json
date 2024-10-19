@@ -1,20 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 0.55,
-            "video_query": "AI generated river in autumn",
-            "audio_query": "river and wind",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 70,
-            "video_query": "AI generated snowy forest",
-            "audio_query": "winter wind",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
             "duration_minutes": 0.58,
             "video_query": "AI generated calm jungle evening",
             "audio_query": "jungle sounds",
