@@ -1,13 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 0.58,
-            "video_query": "AI generated calm jungle evening",
-            "audio_query": "jungle sounds",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 100,
             "video_query": "AI generated space journey ambient",
             "audio_query": "space music",
