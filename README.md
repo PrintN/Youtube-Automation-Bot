@@ -127,7 +127,9 @@ on:
 </details>
 
 ## Limitations of the Youtube API
-By default, users are allowed to upload videos with a maximum duration of 15 minutes. If you wish to upload videos that exceed this limit, you will need to verify your account. For more details click [here](https://support.google.com/youtube/answer/71673).
+1. **Video Duration Limit**: By default, users are allowed to upload videos with a maximum duration of 15 minutes. If you wish to upload videos that exceed this limit, you will need to verify your account. For more details click [here](https://support.google.com/youtube/answer/71673).
+
+2. **OAuth Consent Screen Configuration**: When setting up your Google Cloud Console project, it is important to configure the OAuth consent screen correctly. You must set it to production and not testing. If the consent screen is in testing mode, the refresh token will only be valid for 7 days, which means your YouTube bot will not function as a fully automated system after that period. Ensure you complete this configuration to maintain a fully automated Youtube channel.
 
 ## ⭐ Support the Project
 If you find this project helpful, please consider giving it a ⭐! Starring the repository helps others discover the project and motivates further development. Thank you for your support!
