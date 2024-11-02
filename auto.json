@@ -1,27 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 0.5,
-            "video_query": "AI generated peaceful sunset at the coast",
-            "audio_query": "seagulls and waves",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 65,
-            "video_query": "AI generated magical forest waterfall",
-            "audio_query": "water cascading and bird calls",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.55,
-            "video_query": "AI generated rain on a tin roof",
-            "audio_query": "soft rain sounds",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 45,
             "video_query": "AI generated quiet autumn afternoon",
             "audio_query": "rustling leaves and distant laughter",
