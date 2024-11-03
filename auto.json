@@ -1,48 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 45,
-            "video_query": "AI generated quiet autumn afternoon",
-            "audio_query": "rustling leaves and distant laughter",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.6,
-            "video_query": "AI generated starry night over a lake",
-            "audio_query": "gentle ripples and crickets",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 90,
-            "video_query": "AI generated tranquil snowy night",
-            "audio_query": "soft crunch of snow underfoot",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.5,
-            "video_query": "AI generated butterfly in spring flowers",
-            "audio_query": "gentle buzzing and rustling",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 70,
-            "video_query": "AI generated peaceful countryside landscape",
-            "audio_query": "sheep bleating and soft wind",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.47,
-            "video_query": "AI generated calm waves on a beach",
-            "audio_query": "soft ocean sounds",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 55,
             "video_query": "AI generated warm sunset in vineyard",
             "audio_query": "distant laughter and soft breeze",
