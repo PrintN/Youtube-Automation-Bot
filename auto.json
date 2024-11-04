@@ -1,20 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 55,
-            "video_query": "AI generated warm sunset in vineyard",
-            "audio_query": "distant laughter and soft breeze",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.52,
-            "video_query": "AI generated tree leaves in the wind",
-            "audio_query": "gentle rustling sound",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 85,
             "video_query": "AI generated serene lake in the mountains",
             "audio_query": "chirping birds and flowing water",
