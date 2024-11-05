@@ -1,20 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 85,
-            "video_query": "AI generated serene lake in the mountains",
-            "audio_query": "chirping birds and flowing water",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.53,
-            "video_query": "AI generated peaceful night in the jungle",
-            "audio_query": "distant animal sounds",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 75,
             "video_query": "AI generated vibrant coral reef",
             "audio_query": "underwater bubbles and fish sounds",

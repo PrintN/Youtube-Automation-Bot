@@ -41,7 +41,9 @@
         "https://cdn.pixabay.com/video/2023/12/05/192141-892436363_medium.mp4",
         "https://cdn.pixabay.com/video/2019/05/21/23838-337674789_medium.mp4",
         "https://cdn.pixabay.com/video/2024/02/18/200974-914542826_medium.mp4",
-        "https://cdn.pixabay.com/video/2023/10/25/186514-878145197_medium.mp4"
+        "https://cdn.pixabay.com/video/2023/10/25/186514-878145197_medium.mp4",
+        "https://cdn.pixabay.com/video/2024/03/12/203872-922675721_medium.mp4",
+        "https://cdn.pixabay.com/video/2023/10/11/184510-873463500_medium.mp4"
     ],
     "audios": [
         "https://cdn.freesound.org/previews/648/648491_10182789-hq.mp3",
@@ -67,6 +69,7 @@
         "https://cdn.freesound.org/previews/638/638530_14071689-hq.mp3",
         "https://cdn.freesound.org/previews/234/234075_3347587-hq.mp3",
         "https://cdn.freesound.org/previews/688/688774_1531809-hq.mp3",
-        "https://cdn.freesound.org/previews/240/240218_1440889-hq.mp3"
+        "https://cdn.freesound.org/previews/240/240218_1440889-hq.mp3",
+        "https://cdn.freesound.org/previews/658/658475_9616576-hq.mp3"
     ]
 }
