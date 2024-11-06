@@ -1,48 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 75,
-            "video_query": "AI generated vibrant coral reef",
-            "audio_query": "underwater bubbles and fish sounds",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.59,
-            "video_query": "AI generated foggy morning",
-            "audio_query": "soft morning dew and rustling",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 60,
-            "video_query": "AI generated golden hour in the savanna",
-            "audio_query": "distant animal calls and rustling grass",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.5,
-            "video_query": "AI generated tranquil floating lanterns",
-            "audio_query": "soft water sounds and lanterns flickering",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 80,
-            "video_query": "AI generated golden fields of wheat",
-            "audio_query": "gentle breeze and rustling grains",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.5,
-            "video_query": "AI generated peaceful bamboo grove",
-            "audio_query": "soft rustling bamboo",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 60,
             "video_query": "AI generated summer afternoon in a park",
             "audio_query": "uplifting laughter and distant chatter",
