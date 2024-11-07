@@ -1,20 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 60,
-            "video_query": "AI generated summer afternoon in a park",
-            "audio_query": "uplifting laughter and distant chatter",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.45,
-            "video_query": "AI generated leaves dancing in the wind",
-            "audio_query": "soft breeze",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 75,
             "video_query": "AI generated hiking trail in the mountains",
             "audio_query": "crunching leaves and distant birds",
