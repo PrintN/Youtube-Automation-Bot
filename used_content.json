@@ -51,7 +51,13 @@
         "https://cdn.pixabay.com/video/2018/07/14/17285-280038627_medium.mp4",
         "https://cdn.pixabay.com/video/2024/03/03/202732-918944196_medium.mp4",
         "https://cdn.pixabay.com/video/2020/05/06/38270-415950888_medium.mp4",
-        "https://cdn.pixabay.com/video/2023/10/26/186546-878455774_medium.mp4"
+        "https://cdn.pixabay.com/video/2023/10/26/186546-878455774_medium.mp4",
+        "https://cdn.pixabay.com/video/2024/07/20/222082_medium.mp4",
+        "https://cdn.pixabay.com/video/2024/05/09/211275_medium.mp4",
+        "https://cdn.pixabay.com/video/2020/07/12/44534-439384681_medium.mp4",
+        "https://cdn.pixabay.com/video/2017/09/20/12127-235051444_medium.mp4",
+        "https://cdn.pixabay.com/video/2024/02/04/199294-909903183_medium.mp4",
+        "https://cdn.pixabay.com/video/2024/03/24/205455-926967218_medium.mp4"
     ],
     "audios": [
         "https://cdn.freesound.org/previews/648/648491_10182789-hq.mp3",
@@ -80,6 +86,7 @@
         "https://cdn.freesound.org/previews/240/240218_1440889-hq.mp3",
         "https://cdn.freesound.org/previews/658/658475_9616576-hq.mp3",
         "https://cdn.freesound.org/previews/659/659960_13767047-hq.mp3",
-        "https://cdn.freesound.org/previews/528/528699_520316-hq.mp3"
+        "https://cdn.freesound.org/previews/528/528699_520316-hq.mp3",
+        "https://cdn.freesound.org/previews/676/676801_1158085-hq.mp3"
     ]
 }

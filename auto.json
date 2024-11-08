@@ -1,48 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 75,
-            "video_query": "AI generated hiking trail in the mountains",
-            "audio_query": "crunching leaves and distant birds",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.55,
-            "video_query": "AI generated rain on a forest floor",
-            "audio_query": "heavy drops and ground splashes",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 90,
-            "video_query": "AI generated quiet fishing pier",
-            "audio_query": "gentle waves and seagulls",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.5,
-            "video_query": "AI generated windy beach at sunset",
-            "audio_query": "waves and whistling wind",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 80,
-            "video_query": "AI generated vibrant autumn forest",
-            "audio_query": "leaves crunching and soft wind",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.6,
-            "video_query": "AI generated serene snowy hill",
-            "audio_query": "soft snow falling",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 50,
             "video_query": "AI generated relaxing coastal sunset",
             "audio_query": "soft waves and wind chimes",
