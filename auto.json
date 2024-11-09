@@ -1,34 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 50,
-            "video_query": "AI generated relaxing coastal sunset",
-            "audio_query": "soft waves and wind chimes",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.58,
-            "video_query": "AI generated birds chirping in the morning",
-            "audio_query": "chirping and rustling",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 70,
-            "video_query": "AI generated countryside at dawn",
-            "audio_query": "cow mooing and roosters crowing",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.54,
-            "video_query": "AI generated mist over a calm pond",
-            "audio_query": "gentle water ripples",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 85,
             "video_query": "AI generated sunset over the mountains",
             "audio_query": "soft crickets and wind",
