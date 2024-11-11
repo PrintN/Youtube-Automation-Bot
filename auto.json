@@ -1,20 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 60,
-            "video_query": "AI generated serene riverside",
-            "audio_query": "flowing water and soft laughter",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.55,
-            "video_query": "AI generated gentle ocean currents",
-            "audio_query": "deep water sounds",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
             "duration_minutes": 50,
             "video_query": "AI generated idyllic sunflower field",
             "audio_query": "soft buzzing of bees",
