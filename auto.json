@@ -1,41 +1,6 @@
 {
     "videos": [
         {
-            "duration_minutes": 50,
-            "video_query": "AI generated idyllic sunflower field",
-            "audio_query": "soft buzzing of bees",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.52,
-            "video_query": "AI generated tranquil gravel path",
-            "audio_query": "footsteps on gravel and soft wind",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 40,
-            "video_query": "AI generated sunset on a calm river",
-            "audio_query": "gentle flowing and evening birds",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
-            "duration_minutes": 0.56,
-            "video_query": "AI generated ocean waves crashing on rocks",
-            "audio_query": "loud splashes and seagulls",
-            "upload_to_youtube": true,
-            "video_type": "short"
-        },
-        {
-            "duration_minutes": 55,
-            "video_query": "AI generated snowy winter landscape",
-            "audio_query": "crisp snow crunching",
-            "upload_to_youtube": true,
-            "video_type": "video"
-        },
-        {
             "duration_minutes": 0.48,
             "video_query": "AI generated leaves drifting on water",
             "audio_query": "soft splashes and rippling water",
